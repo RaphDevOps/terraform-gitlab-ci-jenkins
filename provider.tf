@@ -19,12 +19,12 @@ provider "aws" {
 terraform {
   backend "s3" {
     # Replace this with your bucket name!
-    bucket         = "jjtech-statefile-20233"
-    key            = "jjtech/terraform.tfstate"
+    bucket         = "revterrback"
+    key            = "Env/test"
     region         = "us-east-1"
 
     # Replace this with your DynamoDB table name!
-    dynamodb_table = "jjtech-dynamodb"
+    dynamodb_table = "revterrback"
   }
  }
 
